@@ -7,7 +7,19 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "start-US": "ng serve US",
+    "build-US": "ng build US --aot --prod",
+    "test-US": "ng test US",
+    "lint-US": "ng lint US",
+    "e2e-US": "ng e2e US",
+    "start-UK": "ng serve UK ",
+    "build-UK": "ng build UK --aot --prod",
+    "test-UK": "ng test UK",
+    "lint-UK": "ng lint UK",
+    "e2e-UK": "ng e2e UK",
+    "index": "cp src/shared/index.html dist/",
+    "package": "npm run build-UK && npm run build-US && npm run index"
   },
   "private": true,
   "dependencies": {
