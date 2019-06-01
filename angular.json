@@ -5,7 +5,7 @@
   "projects": {
     "US": {
       "root": "",
-      "sourceRoot": "src/tenants/US",
+      "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
       "schematics": {
@@ -22,7 +22,18 @@
             "main": "src/tenants/US/main.ts",
             "polyfills": "src/tenants/US/polyfills.ts",
             "tsConfig": "src/tenants/US/tsconfig.app.json",
-            "assets": ["src/tenants/US/favicon.ico", "src/tenants/US/assets"],
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "src/tenants/US/assets",
+                "output": "/assets"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/shared/assets",
+                "output": "/assets"
+              }
+            ],
             "styles": ["src/tenants/US/styles.scss"],
             "scripts": [],
             "es5BrowserSupport": true
@@ -109,6 +120,135 @@
           "configurations": {
             "production": {
               "devServerTarget": "US:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "e2e/tsconfig.e2e.json",
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
+    },
+    "UK": {
+      "root": "",
+      "sourceRoot": "src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/uk",
+            "index": "src/tenants/UK/index.html",
+            "main": "src/tenants/UK/main.ts",
+            "polyfills": "src/tenants/UK/polyfills.ts",
+            "tsConfig": "src/tenants/UK/tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "src/tenants/UK/assets",
+                "output": "/assets"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/shared/assets",
+                "output": "/assets"
+              }
+            ],
+            "styles": ["src/tenants/UK/styles.scss"],
+            "scripts": [],
+            "es5BrowserSupport": true
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/tenants/UK/environments/environment.ts",
+                  "with": "src/tenants/UK/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "UK:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "UK:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "UK:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "src/tenants/UK/test.ts",
+            "polyfills": "src/tenants/UK/polyfills.ts",
+            "tsConfig": "src/tenants/UK/tsconfig.spec.json",
+            "karmaConfig": "src/tenants/UK/karma.conf.js",
+            "styles": ["src/tenants/UK/styles.scss"],
+            "scripts": [],
+            "assets": ["src/tenants/UK/favicon.ico", "src/tenants/UK/assets"]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "src/tenants/UK/tsconfig.app.json",
+              "src/tenants/UK/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
+    },
+    "UK-e2e": {
+      "root": "e2e/",
+      "projectType": "application",
+      "prefix": "",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "src/tenants/UK/e2e/protractor.conf.js",
+            "devServerTarget": "UK:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "UK:serve:production"
             }
           }
         },
