@@ -18,8 +18,13 @@
     "test-UK": "ng test UK",
     "lint-UK": "ng lint UK",
     "e2e-UK": "ng e2e UK",
+    "start-IN": "ng serve IN ",
+    "build-IN": "ng build IN --aot --prod",
+    "test-IN": "ng test IN",
+    "lint-IN": "ng lint IN",
+    "e2e-IN": "ng e2e IN",
     "index": "cp src/shared/index.html dist/",
-    "package": "npm run build-UK && npm run build-US && npm run index && firebase deploy"
+    "package": "npm run build-UK && npm run build-US && npm run build-IN && npm run index && firebase deploy"
   },
   "private": true,
   "dependencies": {
