@@ -12,14 +12,19 @@ Run `ng serve` for a dev US(default) server. Navigate to `http://localhost:4200/
 
 `npm run start-US`
 
+http://localhost:4200/us/
+
 **🇬🇧UK Server**
 
 `npm run start-UK`
+
+http://localhost:4200/uk/
 
 **IN Server**
 
 `npm run start-IN`
 
+http://localhost:4200/in/
 
 ## Build 🚀🚀🚀
 
@@ -76,7 +81,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 #### Components
 
 **🇺🇸US**
-`ng generate component ../tenants/us/components/example`
+`ng generate component ../tenants/US/components/example`
 
 **🇬🇧UK**
 `ng generate component ../tenants/UK/components/example`
@@ -90,7 +95,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 #### Services
 
 **🇺🇸US**
-`ng generate service ../tenants/us/components/example`
+`ng generate service ../tenants/US/components/example`
 
 **🇬🇧UK**
 `ng generate service ../tenants/UK/components/example`
