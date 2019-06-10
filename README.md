@@ -1,18 +1,18 @@
-# Angular Multi Tenant
+# Angular Multi Tenant 🇺🇸🇬🇧🇮🇳
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0. 
 
 Designed by Srinivas Tamada https://www.9lessons.info
 
-## Development server
+## Development server 🍦🍦🍦
 
 Run `ng serve` for a dev US(default) server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-**US Server**
+**🇺🇸US Server**
 
 `npm run start-US`
 
-**UK Server**
+**🇬🇧UK Server**
 
 `npm run start-UK`
 
@@ -21,15 +21,15 @@ Run `ng serve` for a dev US(default) server. Navigate to `http://localhost:4200/
 `npm run start-IN`
 
 
-## Build
+## Build 🚀🚀🚀
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-**US Build**
+**🇺🇸US Build**
 
 `npm run build-US`
 
-**UK Build**
+**🇬🇧UK Build**
 
 `npm run build-UK`
 
@@ -41,15 +41,15 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the US unit tests via [Karma](https://karma-runner.github.io).
 
-**US Test**
+**🇺🇸US Test**
 
 `npm run test-US`
 
-**UK Test**
+**🇬🇧UK Test**
 
 `npm run test-UK`
 
-**IN Test**
+**🇮🇳IN Test**
 
 `npm run test-IN`
 
@@ -57,15 +57,15 @@ Run `ng test` to execute the US unit tests via [Karma](https://karma-runner.gith
 
 Run `ng e2e` to execute the US end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-**US E2E**
+**🇺🇸US E2E**
 
 `npm run e2e-US`
 
-**UK E2E**
+**🇬🇧UK E2E**
 
 `npm run e2e-UK`
 
-**IN E2E**
+**🇮🇳IN E2E**
 
 `npm run e2e-IN`
 
@@ -73,29 +73,29 @@ Run `ng e2e` to execute the US end-to-end tests via [Protractor](http://www.prot
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Components
+#### Components
 
-**US**
+**🇺🇸US**
 `ng generate component ../tenants/us/components/example`
 
-**UK**
+**🇬🇧UK**
 `ng generate component ../tenants/UK/components/example`
 
-**IN**
+**🇮🇳IN**
 `ng generate component ../tenants/IN/components/example`
 
 **Shared**
 `ng generate component ../shared/shared-components/example`
 
-## Services
+#### Services
 
-**US**
+**🇺🇸US**
 `ng generate service ../tenants/us/components/example`
 
-**UK**
+**🇬🇧UK**
 `ng generate service ../tenants/UK/components/example`
 
-**IN**
+**🇮🇳IN**
 `ng generate service ../tenants/IN/components/example`
 
 **Shared**
