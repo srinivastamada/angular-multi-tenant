@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Project</title>
-  
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Project</title>
+
+
+  <script type="application/javascript">
+
+    function geoip(json) {
+      let domain = 'https://multi.9lessons.info'
+      let code = json.country_code;
+      console.log(code);
+      if (code === 'US') {
+        console.log('US');
+        window.location.href = domain + '/us/';
+      } else {
+        window.location.href = domain + '/uk/';
+      }
+    }
+  </script>
+  <script async src="https://get.geojs.io/v1/ip/geo.js"></script>
+</head>
+
+<body>
+
+
+</body>
+
 </html>
