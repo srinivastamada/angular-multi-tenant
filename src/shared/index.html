@@ -5,11 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Project</title>
-
-
+  <title>Main</title>
   <script type="application/javascript">
-
     function geoip(json) {
       let domain = 'https://multi.9lessons.info'
       let code = json.country_code;
@@ -17,8 +14,10 @@
       if (code === 'US') {
         console.log('US');
         window.location.href = domain + '/us/';
-      } else {
+      } else if (code === 'UK') {
         window.location.href = domain + '/uk/';
+      } else {
+        window.location.href = domain + '/in/';
       }
     }
   </script>

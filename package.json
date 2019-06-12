@@ -1,5 +1,5 @@
 {
-  "name": "US",
+  "name": "multi-tenant",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -24,7 +24,8 @@
     "lint-IN": "ng lint IN",
     "e2e-IN": "ng e2e IN",
     "index": "cp src/shared/index.html dist/",
-    "package": "npm run build-UK && npm run build-US && npm run build-IN && npm run index && firebase deploy"
+    "package": "npm run build-UK && npm run build-US && npm run build-IN && npm run index",
+    "package-host": "npm run build-UK && npm run build-US && npm run build-IN && npm run index && firebase deploy"
   },
   "private": true,
   "dependencies": {

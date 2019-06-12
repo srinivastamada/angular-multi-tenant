@@ -34,7 +34,10 @@
                 "output": "/assets"
               }
             ],
-            "styles": ["src/tenants/US/styles.scss"],
+            "styles": [
+              "src/shared/styles/styles.scss",
+              "src/tenants/US/styles.scss"
+            ],
             "scripts": [],
             "es5BrowserSupport": true
           },
@@ -89,7 +92,10 @@
             "polyfills": "src/tenants/US/polyfills.ts",
             "tsConfig": "src/tenants/US/tsconfig.spec.json",
             "karmaConfig": "src/tenants/US/karma.conf.js",
-            "styles": ["src/tenants/US/styles.scss"],
+            "styles": [
+              "src/shared/styles/styles.scss",
+              "src/tenants/US/styles.scss"
+            ],
             "scripts": [],
             "assets": ["src/tenants/US/favicon.ico", "src/tenants/US/assets"]
           }
@@ -163,7 +169,10 @@
                 "output": "/assets"
               }
             ],
-            "styles": ["src/tenants/UK/styles.scss"],
+            "styles": [
+              "src/shared/styles/styles.scss",
+              "src/tenants/UK/styles.scss"
+            ],
             "scripts": [],
             "es5BrowserSupport": true
           },
@@ -218,7 +227,10 @@
             "polyfills": "src/tenants/UK/polyfills.ts",
             "tsConfig": "src/tenants/UK/tsconfig.spec.json",
             "karmaConfig": "src/tenants/UK/karma.conf.js",
-            "styles": ["src/tenants/UK/styles.scss"],
+            "styles": [
+              "src/shared/styles/styles.scss",
+              "src/tenants/UK/styles.scss"
+            ],
             "scripts": [],
             "assets": ["src/tenants/UK/favicon.ico", "src/tenants/UK/assets"]
           }
@@ -261,7 +273,7 @@
         }
       }
     },
-     "IN": {
+    "IN": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -292,7 +304,10 @@
                 "output": "/assets"
               }
             ],
-            "styles": ["src/tenants/IN/styles.scss"],
+            "styles": [
+              "src/shared/styles/styles.scss",
+              "src/tenants/IN/styles.scss"
+            ],
             "scripts": [],
             "es5BrowserSupport": true
           },
@@ -347,7 +362,10 @@
             "polyfills": "src/tenants/IN/polyfills.ts",
             "tsConfig": "src/tenants/IN/tsconfig.spec.json",
             "karmaConfig": "src/tenants/IN/karma.conf.js",
-            "styles": ["src/tenants/IN/styles.scss"],
+            "styles": [
+              "src/shared/styles/styles.scss",
+              "src/tenants/IN/styles.scss"
+            ],
             "scripts": [],
             "assets": ["src/tenants/IN/favicon.ico", "src/tenants/IN/assets"]
           }
