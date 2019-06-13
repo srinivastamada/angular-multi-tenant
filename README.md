@@ -81,13 +81,13 @@ Run `ng generate component component-name` to generate a new component. You can 
 #### Components
 
 **🇺🇸US**
-`ng generate component ../tenants/US/components/example`
+`ng generate component components/example --project=US`
 
 **🇬🇧UK**
-`ng generate component ../tenants/UK/components/example`
+`ng generate component components/example --project=UK`
 
 **🇮🇳IN**
-`ng generate component ../tenants/IN/components/example`
+`ng generate component components/example --project=IN`
 
 **Shared**
 `ng generate component ../shared/shared-components/example`
@@ -95,13 +95,13 @@ Run `ng generate component component-name` to generate a new component. You can 
 #### Services
 
 **🇺🇸US**
-`ng generate service ../tenants/US/components/example`
+`ng generate service services/example --project=US`
 
 **🇬🇧UK**
-`ng generate service ../tenants/UK/components/example`
+`ng generate service services/example --project=UK`
 
 **🇮🇳IN**
-`ng generate service ../tenants/IN/components/example`
+`ng generate service services/example --project=IN`
 
 **Shared**
 `ng generate service ../shared/services/example`
