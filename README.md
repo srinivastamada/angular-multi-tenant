@@ -1,3 +1,5 @@
+<p align="center"><img src="https://lh3.googleusercontent.com/-q7nP4lSJ4tg/Vim1CZJDWvI/AAAAAAAANIU/vE0RZ8-9rCE/s599-Ic42/9lessonsLogo.png" alt="9lessons Logo" width="250px"></p>
+
 # Angular Multi Tenant 🇺🇸🇬🇧🇮🇳
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0. 
