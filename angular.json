@@ -4,8 +4,8 @@
   "newProjectRoot": "projects",
   "projects": {
     "US": {
-      "root": "",
-      "sourceRoot": "src",
+      "root": "src/tenants/US/",
+      "sourceRoot": "src/tenants/US/",
       "projectType": "application",
       "prefix": "app",
       "schematics": {
@@ -140,7 +140,7 @@
     },
     "UK": {
       "root": "",
-      "sourceRoot": "src",
+      "sourceRoot": "src/tenants/UK",
       "projectType": "application",
       "prefix": "app",
       "schematics": {
@@ -275,7 +275,7 @@
     },
     "IN": {
       "root": "",
-      "sourceRoot": "src",
+      "sourceRoot": "src/tenants/IN",
       "projectType": "application",
       "prefix": "app",
       "schematics": {
