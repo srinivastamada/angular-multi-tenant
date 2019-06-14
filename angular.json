@@ -139,7 +139,7 @@
       }
     },
     "UK": {
-      "root": "",
+      "root": "src/tenants/UK",
       "sourceRoot": "src/tenants/UK",
       "projectType": "application",
       "prefix": "app",
@@ -274,7 +274,7 @@
       }
     },
     "IN": {
-      "root": "",
+      "root": "src/tenants/IN",
       "sourceRoot": "src/tenants/IN",
       "projectType": "application",
       "prefix": "app",
