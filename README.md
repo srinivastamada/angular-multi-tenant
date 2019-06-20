@@ -2,7 +2,7 @@
 
 # Angular Multi Tenant 🇺🇸🇬🇧🇮🇳
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0. 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.
 
 Designed by Srinivas Tamada https://www.9lessons.info
 
@@ -14,19 +14,19 @@ Run `ng serve` for a dev US(default) server. Navigate to `http://localhost:4200/
 
 `npm run start-US`
 
-http://localhost:4200/us/
+http://localhost:4200/
 
 **🇬🇧UK Server**
 
 `npm run start-UK`
 
-http://localhost:4200/uk/
+http://localhost:4200/
 
 **IN Server**
 
 `npm run start-IN`
 
-http://localhost:4200/in/
+http://localhost:4200/
 
 ## Build 🚀🚀🚀
 
