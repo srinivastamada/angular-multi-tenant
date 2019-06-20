@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BannerComponent } from './banner/banner.component';
+import { ContactComponent } from './contact/contact.component';
+
 
 @NgModule({
-  declarations: [BannerComponent],
-  exports:[BannerComponent],
+  declarations: [ContactComponent],
+  exports:[],
   imports: [
     CommonModule
   ]
