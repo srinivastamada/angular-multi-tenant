@@ -92,7 +92,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 `ng generate component components/example --project=IN`
 
 **Shared**
-`ng generate component ../shared/shared-components/example`
+`project/src/shared/services$ng generate component example`
 
 #### Services
 
@@ -106,7 +106,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 `ng generate service services/example --project=IN`
 
 **Shared**
-`ng generate service ../shared/services/example`
+`project/src/shared/services$ ng generate service example`
 
 
 ## Further help
