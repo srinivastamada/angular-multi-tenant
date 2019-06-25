@@ -23,9 +23,9 @@
     "test-IN": "ng test IN",
     "lint-IN": "ng lint IN",
     "e2e-IN": "ng e2e IN",
-    "index": "cp src/shared/index.html dist/",
-    "package": "npm run build-UK && npm run build-US && npm run build-IN && npm run index",
-    "package-host": "npm run build-UK && npm run build-US && npm run build-IN && npm run index && firebase deploy"
+
+    "package": "npm run build-UK && npm run build-US && npm run build-IN"
+
   },
   "private": true,
   "dependencies": {
@@ -50,7 +50,6 @@
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
-    "bulma": "^0.7.5",
     "codelyzer": "^5.1.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
